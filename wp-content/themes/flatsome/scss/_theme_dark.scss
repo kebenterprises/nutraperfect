@@ -1,0 +1,82 @@
+/* -- general -- */
+.dark{color: #ddd}
+.dark a{color: #FFF;}
+.dark a:hover{color: #ddd}
+.dark h1,.dark h2, .dark h3, .dark h4, .dark h5{color: #FFF;}
+
+.dark p{color: #ddd}
+.dark .price{color: #FFF}
+.dark .price del,.dark .price .from{color: #eee;}
+
+.dark .tx-div{background-color: #FFF;opacity: 0.3}
+.dark li.account-dropdown{border-color: rgba(#FFF,0.1)!important}
+
+/* -- header -- */
+.dark-header #masthead .logo a{color: #FFF}
+
+/* -- slider -- */
+.dark .sliderNav a span{border-color:#000; color:#000}
+.dark .sliderBullets .bullet,.flipContainer .pager span.dot{border-color: #000}
+.dark .sliderBullets .bullet.active,.dark .sliderBullets .bullet:hover,.flipContainer .pager span.dot.current{background: #000}
+
+
+/* -- navigation link colors -- */
+.dark-header #masthead ul.header-nav a.nav-top-link, .wide-nav.dark-header ul.header-nav a.nav-top-link{color: #fff; opacity: 0.7}
+.dark-header #masthead ul.header-nav li.active a.nav-top-link, .wide-nav.dark-header ul.header-nav li.active a.nav-top-link{color: #fff;opacity: 1}
+
+.dark-header #masthead .mobile-menu a{font-size: 32px;color: #FFF;}
+
+.dark-header #masthead strong.cart-name, .dark-header span.cart-price{color: #fff;opacity: 0.6;}
+.dark-header #masthead .active strong.cart-name,.dark-header .active span.cart-price{color: #fff;opacity: 1}
+
+/* -- dropdown hover links -- */
+.dark-header #masthead .header-nav li.mini-cart .cart-icon strong{border-color:#fff;color: #FFF;}
+.dark-header #masthead .header-nav li.mini-cart.active .cart-icon strong{border-color:#fff;color: #000;background-color: #fff!important;}
+
+.dark-header #masthead .header-nav li.mini-cart .cart-icon .cart-icon-handle{border-color:#fff;}
+.dark-header #masthead .header-nav li.account-dropdown{border-color:rgba(255,255,255,0.3);}
+
+.dark-header .ux_banner-grid{margin-top: 40px}
+.dark-header .top-divider{display: none}
+
+/* -- forms  --*/
+.dark form label{color: #eee}
+
+/* -- social icons -- */
+.dark .social-icons .icon{border-color:#FFF;color:#FFF;}
+
+/* -- widgets -- */
+.dark .widget .post-date{border-color:#ccc;color: #CCC}
+.dark .widget .post-item:hover .post-date{background: #FFF;color: $primary-color;border-color:#FFF;};
+
+.dark .product_list_widget span.amount{color: #FFF;}
+.dark .flatsome_recent_posts li,.dark .product_list_widget li {border-color: #ccc; border-color: rgba(255,255,255,0.2);}
+
+.dark .widget_nav_menu ul li a{color: #FFF}
+.dark .widget_nav_menu ul li a:hover{color: #ccc}
+.dark .widget_nav_menu ul li a{border-color: rgba(255,255,255,0.2);}
+
+/* -- footer -- */
+.dark.absolute-footer ul li a:hover{color: #FFF;}
+
+/* -- div --*/
+.dark #add_review .inner{background: #000; background: rgba(0,0,0,0.3);border:0}
+.dark .shop_table thead{color: #eee}
+.dark .top-divider{display: none;}
+.dark .checkout-breadcrumb h1{color: #ccc}
+.woocommerce-cart .dark .title-cart,  .woocommerce-checkout .dark .title-checkout, 
+.dark .tabbed-content ul.tabs li.active a,.dark .shop_table .total, .dark .comment-list cite.fn{color: #FFF;}
+.dark .woocommerce .order-review,.dark .woocommerce-checkout form.login{
+	background-color: #000; background-color: rgba(0,0,0,.3);
+}
+.dark  .checkout-group h3,.dark .order-review h3{color:#FFF!important}
+.dark .widget_product_categories li a,.dark .widget_layered_nav li a,.dark .widget_layered_nav_filters li a {color: #eee}
+.dark .product-category .header-title{background: #000; background: rgba(0,0,0,.9);}
+.dark .tabbed-content ul.tabs li.active a{border-color:#FFF;}
+
+/* borders */
+.dark .author-box, .dark .tabbed-content ul.tabs li a, .dark .product-details, .dark .comment-list .children .comment-inner, .dark .comment-list > li.comment > .comment-inner, .dark .navigation-post .nav-next, .dark .navigation-post, .dark footer.entry-meta, .dark .blog-pinterest-style .entry-content,.dark .pagination-centered ,.dark .product-sidebar-right .inner,.dark .widget h3.widget-title.shop-sidebar, 
+.dark .widget_product_categories > ul > li, .dark .widget_layered_nav > ul > li , .dark hr, 
+.dark .product_meta > span , .dark .review-item, .dark h3.section-title, .dark .shop_table thead 
+,.dark .cart_table_item, .dark .cart-wrapper,.dark .cart-sidebar .widget-title, 
+.dark .cart_totals .total,.dark .shop_table .total, .dark table tr,.product-info .social-icons{border-color:#666; border-color:rgba(255,255,255,0.3)}

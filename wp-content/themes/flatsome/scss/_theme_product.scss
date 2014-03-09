@@ -1,0 +1,115 @@
+/* -- variation select box --*/
+.single_variation_wrap{display: none}
+.single_variation_wrap .single_variation{margin-bottom: 15px}
+
+
+/* -- Product zoom -- */
+.zoom-button{z-index:98; opacity: 0.5; font-size:16px; left: 30px;bottom:30px; border:3px solid #000;color: #000; @include radius(99px);  position: absolute;padding:10px;cursor:pointer;}
+.zoom-button:hover{opacity: 1}
+.product-zoom-lightbox .mfp-img{cursor: -moz-zoom-out; cursor: -webkit-zoom-out; cursor: zoom-out;}
+
+/* Product-page-sidebar (Upsell etc.) */
+.product-page-aside{padding-top: 7px;}
+.product-page-aside h6{font-size: 11px;text-transform: uppercase;}
+.product-page-aside .product{opacity: 0.7;@include single-transition();margin-bottom: 10px;}
+.product-page-aside .product:hover{opacity: 1}
+.up-sell.large-block-grid-2 li{padding: 0px 3px 6px 3px!important;margin-bottom: 0px}
+.up-sell.large-block-grid-2 li img{display: block}
+.up-sell .product.small{position: relative;}
+
+.product-sidebar-right .inner{border-left: 1px solid #EEE;padding-left: 30px}
+.product-sidebar-left .inner{border-right: 1px solid #EEE;padding-right: 30px}
+
+/* -- product text top -- */
+.product-page .size-chart{font-size: 80%;font-weight: normal;}
+.product-page .custom.dropdown{width: 80%!important}
+.product-page .text-center .custom.dropdown{width: 80%!important;margin-left: auto!important;margin-right: auto!important}
+.product-page .prefix.last{@include radius('0px 10px 0px 10px');}
+
+/* -- product text -- */
+.product-info h4 span{color: #999;text-transform: none;}
+.product-info h4 a{font-size:70%;text-transform: uppercase;}
+
+
+/* -- attributes tab--  */
+.shop_attributes th{width: 100px}
+.shop_attributes tr{border-bottom: 1px solid $border-light}
+.shop_attributes p{margin: 0}
+
+
+/* -- product details -- */
+.product-details{border-top: 1px solid $border;}
+.product-details.sections-style{border:0;}
+
+/* -- prodcut meta --  */
+.product_meta > span{display: block;border-top: 1px dotted $border;padding: 7px 0;font-size: 80%}
+
+/* -- variations -- */
+.variations .value{margin-left: 0;}
+.variations .value .minus, .variations .value .plus{display:none!important}
+.variations select{margin-bottom: 0}
+.variations td{vertical-align: middle}
+.variations label{font-size: 95%;font-weight: bolder;margin: 0}
+.variations .reset_variations{display: none!important}
+.variations .select-wrapper{width: 90%}
+
+
+/* -- related products --*/
+.related-product h2{text-transform: uppercase;padding-top: 0}
+
+
+/* --  Product info section style -- */
+.product-page-sections h5{text-transform: uppercase; opacity: 0.6; color: #111;}
+.product-page-sections #reviews h2{display: none}
+.product-page-sections #reviews hr{display: none}
+.product-page-sections .entry-content{margin-top: 0;}
+
+/* -- Product info tabs_vertical-style --*/
+.tabs_vertical-style h3{border-bottom: 0;padding-bottom: 15px}
+.tabs_vertical-style #reviews > .row{margin:0!important}
+.tabs_vertical-style #add_review.large-5{padding-left: 15px;}
+
+
+/* -- next prev products navigation -- */
+.next-prev-nav{text-align: right;position: relative;margin-bottom: 30px}
+.next-prev-nav .prod-dropdown > a{font-size:16px;line-height:16px;display:block;padding-top: 2px; text-align:center; width: 25px;height: 25px; border: 2px solid; display: inline-block;@include radius(99px);color: #ccc;}
+.next-prev-nav .prod-dropdown > a:hover{border-color: $primary-color; background-color:$primary-color;color: #FFF;};
+.prod-dropdown{display:inline-block;z-index: 99}
+.prod-dropdown .nav-dropdown{left:auto;right: 0px!important;width: auto;padding: 3px;margin: 0px}
+.prod-dropdown .nav-dropdown img{width: auto;display: block;}
+
+
+/****** PRODUCT REVIEWS ******/
+#reviews .star-rating,#reviews p.meta{display: inline-block;}
+#reviews p.meta{margin-bottom: 5px}
+#reviews h2{font-size: 130%;font-weight: normal;}
+#reviews h2 strong{font-weight: bolder}
+#review_form{background: #FFF;margin: 0 auto;padding: 40px}
+textarea#comment{height: 100px}
+
+/* -- add review form  -- */
+#add_review .inner { padding: 15px 30px; position: relative; background: #fff; border: 3px solid #ddd;}
+
+/* -- review-item -- */
+.review-item{position:relative; border-bottom: 2px dotted $border-light; margin-bottom: 15px; font-size: 90%;min-height: 85px;padding-left: 90px;}
+.review-item .avatar{position: absolute;left:0;top:-5px;}
+.review-item .description{color: #777;font-style: italic;font-family: georgia;font-size: 105%;padding-right: 20%}
+
+/* -- review star rating form -- */
+.woocommerce p.stars:after,.woocommerce-page p.stars:after{content:"";display:block;clear:both}
+.woocommerce p.stars span,.woocommerce-page p.stars span{width:80px;height:16px;position:relative;float:left;background:url(star.png) repeat-x left 0}
+.woocommerce p.stars span a,.woocommerce-page p.stars span a{float:left;position:absolute;left:0;top:0;width:16px;height:0;padding-top:16px;overflow:hidden}
+.woocommerce p.stars span a:hover,.woocommerce-page p.stars span a:hover,.woocommerce p.stars span a:focus,.woocommerce-page p.stars span a:focus{background:url(star.png) repeat-x left -16px}
+.woocommerce p.stars span a.active,.woocommerce-page p.stars span a.active{background:url(star.png) repeat-x left -32px}
+.woocommerce p.stars span a.star-1,.woocommerce-page p.stars span a.star-1{width:16px;z-index:10}
+.woocommerce p.stars span a.star-2,.woocommerce-page p.stars span a.star-2{width:32px;z-index:9}
+.woocommerce p.stars span a.star-3,.woocommerce-page p.stars span a.star-3{width:48px;z-index:8}
+.woocommerce p.stars span a.star-4,.woocommerce-page p.stars span a.star-4{width:64px;z-index:7}
+.woocommerce p.stars span a.star-5,.woocommerce-page p.stars span a.star-5{width:80px;z-index:6}
+
+/* -- yith_magnifier_zoom_wrap fix --*/
+.product-gallery{margin-bottom: 25px}
+.yith_magnifier_zoom_wrap{z-index: 8!important;}
+
+
+

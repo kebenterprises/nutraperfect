@@ -1,0 +1,173 @@
+---- 1.8.5 -----
+FIX: WooCommerce 2.1 compitable! 
+FIX: Cart dropdown now auto hides
+FIX: Various CSS improvements.
+FIX: Child theme updated
+
+Note: You need to update to WooCommerce 2.1 for this theme version to work!
+
+---- 1.8 -----
+NEW: "Add to cart" button on category grid (optional).
+NEW: [background] shortcode. Add background/parallax to any content.
+NEW: [ux_custom_products] Shortcode. Get products from a custom category.
+NEW: Labels for Dropdown menu. (New, Hot, Sale, Popular).
+NEW: Product FlipBook Shortcode [ux_product]
+NEW: Accordian / Vertical tabs product page style.
+NEW: Out of stock badge.
+NEW: HTML Block for default shop page header.
+
+NEW OPTION: Disable scrollbar on top of product image slider
+NEW OPTION: Added image_height="" to [blog_post] slider.
+NEW OPTION: Change product hover style. Fade in, zoom or disable.
+
+FIX: Sharing wishlists now works.
+FIX: Fixed long white space on product pages on iPhones.
+FIX: Crashing and freezing on Andriod phones.
+FIX: Issues and better styling for Pinterest Blog style.
+FIX: Small fix to Flatsome Recent Comments widget.
+FIX: [lightbox] shortcode now works on Safari and Firefox.
+FIX: Only logged in users can now share wishlist.
+FIX: Video banner/slider now works for firefox.
+FIX: Bugs with Envato Toolkit.
+FIX: Bugs when saving HTML in Theme Option Panel.
+FIX: Missing gap on grid style banner layout.
+
+
+----- 1.7 -----
+NEW: Video support for [ux_banners]
+NEW: Blank / Transparent header template.
+NEW: Added subsets to google fonts(cyrillic-ext, greek-ext,greek,vietnamese,cyrillic)
+NEW: Rain effect added to [ux_banner effect="rain"]
+NEW: Added "columns=" to product sliders and pinterest shortcode. 
+NEW: 2x new blog list layouts. (List style and Pinterest style).
+NEW: Related products are now a slider and its possible to have more than 4 products.
+NEW: Product Categries slider.
+NEW: Option to hide cart from header
+NEW:  [lightbox] shortcode! Open any custom content in a lightbox with a link or a button.
+
+FIX: Works with WP 3.8, WooCommerce 2.0.20
+FIX: Changing columns for category and product shortcodes now works (f.ex columns="4").
+FIX: WPML Language dropdown gets proper style.
+FIX: 'My account' link now shows in mobile navigation.
+FIX: IE11, Safari 7 and text on slider issues.
+FIX: Search box styles issues for mobile.
+FIX: Pinterest and product sliders in tabs now works proplery.
+FIX: Better RTL support
+
+----- 1.6 ----
+NEW: Merged search results. Search products, pages and blog posts from search.
+NEW: Added effects="" to [ux_banner]. Try effect="snow".
+NEW: Added LinkedIn and YouTube in to [follow] shortcode
+NEW: Added size="small" to [follow] shortcode.
+NEW: PSD of homepage
+
+FIX: Various CSS styling issues
+FIX: Updated JS libaries to latest version.
+FIX: Search position in header for Wide Nav option.
+FIX: Now integrates with Sensei plugin.
+FIX: Quantity box problems
+FIX: Problems with Facebook, Pinterest, twitter sharing.
+FIX: Various small fixes
+FIX: Bug with 3-4th level menu items in dropdown
+
+
+----- 1.5 -------
+NEW: Full width Main navigation option!
+NEW: Facebook login button Shortcode [facebook_login_button text="" size=""]
+NEW: Facebook login on checkout option
+NEW: Light/dark main content text option.
+NEW: Change background color of main content. 
+NEW: Change products per row in product grid
+NEW: Change products per page in Theme Option.
+NEW: Flatsome Upsell Widget (Add to product page sidebar etc).
+NEW: Added arrows to product thumbnail slider if there is more than 4 thumbnails.
+NEW: Added "target" tag to [button].
+
+FIX: Quantity buttons now looks good in all browsers
+FIX: Fixed some weird stuff happening with ux_slider
+FIX: Removed UP and DOWN arrow from Quantity. Enough with + and -.
+FIX: Additional line in section style product page removed.
+FIX: Blurred images in product grid.
+FIX: Shortcodes now works in additional product tab.
+FIX: Search widget now search blog and pages, and not only products
+FIX: [team_member] icons.
+FIX: Sale bubble now supports longer text.
+FIX: Various CSS fixes.
+
+
+----- 1.4 (01/10/13) -----
+NEW FEATURE: Facebook Login/Register 
+NEW FEATURE: 3-column product page. Left or Right sidebar.
+
+NEW OPTION: Google plus, instagram andd RSS added to [follow] shortcode
+NEW OPTION: Google plus added to [share]
+NEW OPTION: Disable Google fonts
+NEW OPTION: Enable share icons on blog
+
+FIX: Various CSS fixes.
+FIX: 100% compitable with YITH WooCommerce Zoom Magnifier. (http://wordpress.org/plugins/yith-woocommerce-zoom-magnifier/)
+FIX: Author box can now be removed from blog.
+FIX: Some pages breaks in IE and Firefox. 
+
+
+----- 1.3.1 (14/09/13) -----
+FIX: Various CSS fixes.
+
+
+----- 1.3.1 (14/09/13) -----
+FIX: Bug in Header html.
+FIX: Custom color for paginations and buttons now works
+FIX: Editing Child Theme CSS now works.
+
+----- 1.3 (13/09/13) -----
+NEW FEATURE: Catalog mode option! Remove Shopping functionality / hide prices.
+
+NEW OPTION: Change font size on shop breadcrumb (optional)
+NEW OPTION: Option to remove My Account / Login link from header
+NEW OPTION: Change position on search. Left/Right or hidden.
+NEW OPTION: Option to remove 'Home' from shop breadcrumb.
+
+CHANGED: Logo is no longer a H1 tag.
+
+FIX: Removing the top bar now works.
+FIX: Fixed issues with SEO plugins creating duplicated content.
+FIX: Removed /shop/ from category breadcrumb. This can be enabled in Settings > Permalinks
+FIX: Fixed langauge localization file with "Quick View" and "Complete the look" texts.
+FIX: Pinterest shortcode now works properly.
+FIX: Added link to product on product title inside Quick View.
+FIX: "My Account" custom page template is now 100% Secure.
+FIX: Various CSS fixes.
+
+
+
+----- 1.2.1 (09/09/13) -----
+FIX: Left and Right sidebar template now works properly.
+FIX: Small CSS fixes
+
+
+----- 1.2 (08/09/13) -----
+
+NEW FEATURE: Featured item Post type (Portfolio style) Optional plugin.
+NEW FEATURE: New Parallax option for UX Banners! [ux_banner parallax="1"]
+NEW FEATURE: Blank landing page template (no logo, and no footer)
+
+FIX: Fixed various bugs with [ux_slider] shortcode.
+FIX: Header background image now works.
+FIX: Various CSS and JS fixes.
+FIX: Blocks shortcode now visible in Blocks post list.
+
+
+----- 1.1 (05/09/13) ------
+
+NEW FEATURE: Change blog layout (Sidebar right, Sidebar left, No sidebar)
+
+FIX: Customers now redirects to homepage when user logging out.
+FIX: Error message display bug
+FIX: CSS for IE8 now loads properly.
+FIX: Various CSS improvements.
+FIX: Various mobile CSS fixes.
+FIX: Various fixes for iPad/Tablet portrait mode.
+FIX: Google Rich snippets now works (Review stars in google search results)
+
+----- 1.0 (03/09/13) -----
+Initial release

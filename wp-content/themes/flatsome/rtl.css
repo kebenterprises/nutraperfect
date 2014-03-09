@@ -1,0 +1,37 @@
+/*
+Theme Name: flatsome
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+	text-align:right;
+}
+
+#logo{text-align: left}
+.tx-div {margin: 15px 0 15px auto;}
+.widget_product_tag_cloud a, .widget_tag_cloud a{float:right}
+.widget_product_categories li .count, .widget_layered_nav li .count{float:left;}
+.select-wrapper{margin:0 0 0 auto}
+.tabbed-content ul.tabs li {float:right}
+.product-thumbnails,.iosSlider{text-align:left;}
+.product-lightbox-inner{text-align:right}
+.product-info .star-rating {margin-left:auto;}
+.review-item .description{padding-right:0;}
+.woocommerce p.stars span, .woocommerce-page p.stars span {float:right;}
+.tabbed-content ul.tabs li a{margin-left:25px;margin-right:0}
+
+.product_list_widget li{padding: 10px 75px 10px 0px;}
+.product_list_widget .wp-post-image {right: 0px;left:auto;}
+
+.mini-cart-item a.cart_list_product_title{padding:0}
+
+.shop_table.cart td.product-name{text-align:right}

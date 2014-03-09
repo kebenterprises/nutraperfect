@@ -1,0 +1,109 @@
+$base-font-size: 100% !default;
+$em-base: 16px !default;
+
+// Converts "px" to "em" using the ($)em-base
+@function convert-to-em($value, $base-value: $em-base)  {
+  $value: strip-unit($value) / strip-unit($base-value) * 1em;
+  @if ($value == 0em) { $value: 0; } // Turn 0em into 0
+  @return $value;
+}
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+// Working in ems is annoying. Think in pixels by using this handy function, em-calc(#)
+// Just enter the number, no need to mention "px"
+@function em-calc($values, $base-value: $em-base) {
+  $max: length($values); // Get the total number of parameters passed
+
+  // If there is only 1 parameter, then return it as an integer.
+  // This is done because a list can't be multiplied or divided even if it contains a single value
+  @if $max == 1 { @return convert-to-em(nth($values, 1), $base-value); }
+
+  $emValues: (); // This will eventually store the converted $values in a list
+  @for $i from 1 through $max {
+    $emValues: append($emValues, convert-to-em(nth($values, $i), $base-value));
+  }
+  @return $emValues;
+}
+
+//Retaining this for backward compatability
+
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+
+$default-float: left;
+
+$body-bg: #fff;
+$body-font-color: #777;
+$body-font-family: "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+// We use this to control font-smoothing
+$font-smoothing: antialiased;
+
+// We use these as default colors throughout
+$primary-color: #627f9a; // buttons, cart etc.
+$secondary-color: #d26e4b; // callouts, stars etc.
+$alert-color: #b20000;
+$success-color: #7a9c59;
+$border :#DDD;
+$border-light: #EEE;
+$gray: #777;
+
+//default link color
+$anchor-font-color: $primary-color !default;
+$anchor-font-color-hover: #000 !default;
+
+
+// We use these to make sure border radius matches unless we want it different.
+$global-radius: 6px !default;
+$global-rounded: 1000px !default;
+$button-radius: 5px !default;
+
+// We use this to control width of layout
+$row-width:     emCalc(1080px) !default;
+$box-width:     emCalc(1140px) !default;
+$column-gutter: emCalc(30px) !default;
+
+
+//
+// Typography Variables
+//
+
+// We use these to control header font styles
+$header-font-family:                   "Helvetica", Helvetica, Arial, sans-serif !default;
+$header-font-weight:                   bold !default;
+$header-font-style:                    normal !default;
+$header-font-color:                    #555 !default;
+$header-line-height:                   1.4 !default;
+$header-top-margin:                    .2em !default;
+$header-bottom-margin:                 .5em !default;
+$header-text-rendering:                optimizeLegibility !default;
+
+// We use these to control header font sizes
+$h1-font-size:                         emCalc(26px) !default;
+$h2-font-size:                         emCalc(24px) !default;
+$h3-font-size:                         emCalc(20px) !default;
+$h4-font-size:                         emCalc(18px) !default;
+$h5-font-size:                         emCalc(16px) !default;
+$h6-font-size:                         1em !default;
+
+
+// Media Queries
+$mobile-screen: emCalc(768px) !default;
+$small-screen: emCalc(768px) !default;
+$medium-screen: emCalc(1280px) !default;
+$large-screen: emCalc(1440px) !default;
+
+$screen: "only screen" !default;
+$mobile: "only screen and (max-width:"#{$mobile-screen}")" !default;
+$small: "only screen and (min-width:"#{$small-screen}")" !default;
+$medium: "only screen and (min-width:"#{$medium-screen}")" !default;
+$large: "only screen and (min-width:"#{$large-screen}")" !default;
+$landscape: "only screen and (orientation: landscape)" !default;
+$portrait: "only screen and (orientation: portrait)" !default;

@@ -1,0 +1,172 @@
+/* -- widget layout -- */
+.page #secondary{padding-top: 5px}
+.widget {margin-bottom: 30px}
+.widget .tx-div{margin-bottom: 20px}
+.widget-title{text-transform: uppercase;font-size: 95%}
+.widget h3.widget-title.shop-sidebar{border-bottom: 3px solid $border-light;padding: 0 0 5px;margin-bottom: 15px}
+
+
+/* -- widget list reset -- */
+.widget ul li{line-height: 120%;list-style: none;}
+.widget ul li:last-child{border:0};
+.widget ul li:first-child{padding-top: 0};
+.widget ul {margin: 0;padding: 0}
+.widget li a{padding-bottom: 5px;display: inline-block;}
+
+/* -- woocommerce  widget_product_categories /layered nav / layered nav filters -- */
+.widget_product_categories li a,.widget_layered_nav li a,.widget_layered_nav_filters li a{font-size:90%;padding:8px 0;color:#777;display:inline-block;text-transform: uppercase;}
+.widget_product_categories li a:hover,.widget_layered_nav li a:hover,.widget_layered_nav_filters li a:hover{color: #000;text-decoration: underline;}
+
+.widget_layered_nav_filters .chosen a{background: #eee;display: inline-block;padding: 0 5px;}
+.widget_layered_nav_filters .chosen a:hover{background: $alert-color;text-decoration: none; color: #FFF;}
+
+.widget_layered_nav_filters .chosen a:before{content: "x"; margin-right: 5px;font-size: 80%;color: #999}
+.widget_product_categories li{position: relative;}
+.widget_product_categories li .count,.widget_layered_nav li .count,{color: #ccc;font-size: 80%;float:right;padding-top: 9px;}
+.widget_product_categories > ul > li, .widget_layered_nav > ul > li{border-bottom: 1px solid #eee;}
+.widget_layered_nav .chosen a{font-weight: bold;}
+
+.widget_product_categories li{position: relative;}
+.widget_product_categories li a{padding-right: 15px;}
+.widget_product_categories li .count{position: absolute;top:0px;right:0}
+
+
+.widget_product_categories li ul.children{display: none;padding:5px 0 10px 15px}
+.widget_product_categories li ul.children li{border-top: 1px solid #f1f1f1}
+
+.widget_product_categories li.current-cat-parent ul.children{display: block;}
+.widget_product_categories li.current-cat ul.children{display: block;}
+
+.widget_product_categories li.current-cat > a {color: #000;font-weight: bold;}
+
+.widget_layered_nav_filters li{float:left;margin-right: 5px;}
+.widget_layered_nav_filters {overflow: hidden;}
+
+
+/* -- product listing widget  -- */
+.product_list_widget .wp-post-image{position: absolute;left:0px;width: 60px!important;}
+.product_list_widget li{border-bottom: 1px solid $border-light;padding: 10px 0 10px 75px;position: relative;overflow: hidden;width: 100%;}
+.product_list_widget li a{display: block;font-size: 95%;}
+.product_list_widget span.amount{display: inline-block;font-weight: bold;color:#000;margin-top: 3px}
+.product_list_widget del span.amount{color: #777;font-weight: normal;text-decoration: line-through;}
+.product_list_widget .variation{font-size: 80%;margin: 0}
+.product_list_widget .variation dt, .product_list_widget .variation dd{display: inline-block;}
+.product_list_widget .variation dd{margin:0 0 0 5px;}
+.product_list_widget .star-rating{font-size: 80%;margin-top: 5px}
+
+
+/* -- shopping cart widget -- */
+.widget_shopping_cart_content p.total{border-bottom: 2px dotted #CCC;color: #000;text-align: center;padding: 10px 0;border-top: 1px solid $border-light}
+.widget_shopping_cart_content .buttons .button{width: 100%;padding: 10px;text-transform: uppercase;font-size: 90%;margin: 0 0 5px 0}
+
+
+/* -- recent comments widget -- */
+.widget_recent_comments li{margin-bottom: 10px;padding-bottom: 5px;border-bottom: 1px solid #eee;}
+
+/* -- blog post widget -- */
+.flatsome_recent_posts li{border-bottom: 1px solid $border-light;position: relative;padding:0px 0px 10px 45px;margin-bottom: 10px}
+
+.flatsome_recent_posts li a{padding-bottom: 0px}
+.flatsome_recent_posts .post-date{position: absolute;left:0;top:5px;width: 30px;}
+.flatsome_recent_posts .post_comments {font-size: 80%;display: block;margin-top: 5px}
+
+/* -- text widget -- */
+.textwidget{line-height: 160%;font-size: 100%;}
+
+/* -- calender widget -- */
+.widget_calendar caption{text-transform: uppercase;font-weight: bold;padding:15px 0px;border-top: 2px solid $border;}
+
+/* -- rss widget -- */
+.widget_rss ul li{margin-bottom:15px;}
+.widget_rss ul li a.rsswidget{display: block;}
+.widget_rss .rss-date{text-transform: uppercase;font-size:80%;}
+
+
+/* -- Nav menu -- */
+.widget_nav_menu .menu {height: 100%;padding-bottom: 30px}
+.widget_nav_menu ul li {font-size: 90%;text-transform: uppercase;font-weight: bold}
+.widget_nav_menu ul li a{display: block;padding: 10px 0;color: #999; border-bottom: 1px solid #EEE;}
+.widget_nav_menu ul li a:hover{color: #111}
+.widget_nav_menu ul li.current-menu-item a{color: #000;border-right:3px solid #ddd}
+.widget_nav_menu ul li ul{margin-left: 10px;display: none}
+
+
+
+/* -- product tag cloud widget -- */
+.widget_product_tag_cloud,.widget_tag_cloud{overflow: hidden}
+.widget_product_tag_cloud a,.widget_tag_cloud a{color:$primary-color;display: inline-block; font-size: 12px!important;float:left; border:1px solid $primary-color; padding: 4px 8px; margin: 0 5px 5px 0}
+.widget_product_tag_cloud a:hover,.widget_tag_cloud a:hover{background: $primary-color;color: #FFF;}
+.dark .widget_product_tag_cloud a,.dark .widget_tag_cloud a{color:#FFF; border-color:#FFF; opacity: 0.6}
+.dark .widget_product_tag_cloud a:hover,.dark .widget_tag_cloud a:hover{background: #FFF;color: #333;opacity: 1}
+
+
+/* -- ninjaforms fix -- */
+.footer .widget_ninja_forms_widget .ninja-forms-req-symbol,.footer .widget_ninja_forms_widget #ninja_forms_required_items{display: none;}
+.footer .widget_ninja_forms_widget .ninja-forms-form-wrap .ninja-forms-form .field-wrap.label-left .ninja-forms-field{margin: 0}
+.ninja-forms-form-wrap .ninja-forms-form .field-wrap.label-left .ninja-forms-field, .ninja-forms-form-wrap .ninja-forms-form .field-wrap.label-left .ninja-forms-star-rating-control{margin-left: 0!important}
+
+
+/* -- Price filter widget  */
+.widget_price_filter {
+        .price_slider {
+            margin-bottom: 1em;
+            background: #eee;
+        }
+        .price_slider_amount {
+            text-align: right;
+            line-height: 2.4em;
+            font-size: 0.8751em;
+            .button {
+                font-size: 1.15em;
+            }
+            .button {
+                float:left;
+                font-size: 95%;padding: 10px 15px;
+            }
+        }
+       .ui-slider {
+            position: relative;
+            text-align:left;
+        }
+       .ui-slider .ui-slider-handle {
+            position:absolute;
+            z-index: 2;
+            width: 0.9em;
+            height: 0.9em;
+            cursor: pointer;
+            outline:none;
+            top: -.2em;
+            @include radius(99px);
+            background-color: #777;
+            &:last-child {
+                margin-left: -13px;
+            }
+        }
+       .ui-slider .ui-slider-range {
+            position:absolute;
+            z-index: 1;
+            font-size: .7em;
+            display:block;
+            border: 0;
+            background: #999;
+        }
+       .price_slider_wrapper .ui-widget-content {
+          
+        }
+       .ui-slider-horizontal {
+            height: .5em;
+        }
+       .ui-slider-horizontal .ui-slider-range {
+            top: 0;
+            height: 100%;
+        }
+       .ui-slider-horizontal .ui-slider-range-min {
+            left: -1px;
+        }
+
+       .ui-slider-horizontal .ui-slider-range-max {
+            right: -1px;
+        }
+
+}
+

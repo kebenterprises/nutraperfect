@@ -1,0 +1,138 @@
+/* -- background shortcode  -- */
+.ux_bg .featured-box, .ux_bg .testemonial, .ux_bg .blog_shortcode_text,.ux_bg .product-small .info{ border:1px solid #FFF; background: #f1f1f1;padding: 20px 30px; background: rgba(255,255,255,0.9);-webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);-moz-box-shadow:    0px 0px 9px 0px rgba(0, 0, 0, 0.1);box-shadow:         0px 0px 9px 0px rgba(0, 0, 0, 0.1);}
+.ux_bg.dark .featured-box, .ux_bg.dark .blog_shortcode_text,.ux_bg.dark .product-small .info{background: #333;border:1px solid #000; background:rgba(0,0,0,0.9);}
+
+.ux_bg .blog_shortcode_text{margin-top: -20px;}
+.ux_bg .sliderNav.small a,.ux_bg #main-content,.ux_bg h3.section-title.title_center span {background: transparent!important;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+.ux_bg h3.section-title.title_center{border:0!important;}
+.ux_bg h3.section-title.title_center span:before{content:"";border-left:120px solid rgba(0,0,0,0.1);height: 3px;display:inline-block;margin-bottom:5px;margin-right: 30px;}
+.ux_bg h3.section-title.title_center span:after{content:"";border-left:120px solid rgba(0,0,0,0.1);height: 3px;display:inline-block;margin-bottom:5px;margin-left: 30px;}
+.ux_bg h3.section-title.title_center span{display:inline-block;line-height: 100%;}
+.ux_bg .blog_shortcode_item,.ux_bg .iosSlider .product-small{padding-bottom: 10px!important;}
+.ux_bg.dark h3.section-title span{border-color:#FFF;}
+.ux_bg .iosSlider{margin-bottom: 0}
+.ux_bg .row{margin-bottom: 0!important}
+
+.ux_bg .sliderNav  a span{background-color:#FFF;}
+.ux_bg .product-small .info{margin: 0 15px;padding:5px 5px 15px;}
+#content .ux_bg{padding-left:30px!important;padding-right:30px!important;}
+
+/* -- blog post slider -- */
+.iosSlider.blog-posts{margin-bottom: 15px!important}
+.blog_shortcode_item .post-date{left:-15px;top:25px;}
+.blog_shortcode_item .blog_shortcode_text h3{font-size: 100%}
+.blog_shortcode_item .entry-image{margin-top: 0} 
+.blog_shortcode_item .from_the_blog_excerpt{font-size: 80%; color: #777}
+.blog_shortcode_item .from_the_blog_comments{font-size: 60%;color: #ccc;text-decoration: uppercase;margin-top: 5px;text-transform:uppercase;}
+.blog_shortcode_item:hover .from_the_blog_comments{color: #333}
+.blog_shortcode_item:hover .post-date{color:#FFF;background-color: $primary-color};
+
+/* -- Google maps --*/
+#map_container{position: relative;margin-bottom: 30px;}
+#map_container .map-info{position: absolute;bottom:30px;left:0;right:30px;}
+#map_container .map_inner{padding: 15px;background: #FFF;}
+
+/* -- Featured products. Used in Pintrest style / lookbook -- */
+.featured-product{margin-bottom: 10px}
+.featured-product .product-bg{position: absolute; bottom:0;top:0;left:0;right:0;background: $primary-color; opacity: 0; @include single-transition(opacity); color: #FFF;}
+.featured-product:hover .product-bg{opacity: 0.4}
+.featured-product .product-text{font-size:80%; padding: 0 60px; position: absolute; top:30%;  width: 100%;text-align: center; opacity: 0; @include single-transition(opacity); text-shadow:1px 1px 1px rgba(0,0,0,0.2)}
+.featured-product .product-text h3{text-transform: uppercase; color: #fff;}
+.featured-product:hover .product-text{opacity: 1}
+.featured-product .front-image img{width: 100%!important}
+.featured-product .price {font-size: 150%;}
+.featured-product .star-rating{margin: 0 auto 10px;}
+.featured-product .price .from,.featured-product .price .amount{color: #FFF;}
+
+/* -- zoom style for pinterest grid -- */
+.pinterest-style{margin-left: -5px;margin-right: -5px;}
+.pinterest-style li{float:left;list-style: none;margin: 0;min-height: 200px}
+.pinterest-style .featured-product > a{display: block;overflow: hidden;margin:5px;}
+.pinterest-style .featured-product img{-webkit-transition: -webkit-transform 3s ease;-moz-transition: -moz-transform 3s ease;transition: transform 3s ease}
+.pinterest-style .featured-product:hover img{-webkit-transform: scale(1.25); -moz-transform: scale(1.25); -o-transform: scale(1.25);transform: scale(1.25);}
+ul.pinterest-style{@include single-transition(height);}
+
+
+
+/* -- lookbook slider -- */
+.lookbook-slider ul{margin:0!important}
+.lookbook-slider li{padding: 0!important;}
+.lookbook-slider .quick-view{bottom: 42%;font-size: 95%;margin:0 auto;opacity:0;background: #FFF!important;color: #000;padding: 10px 20px; width: 170px;}
+.lookbook-slider .product-image:hover .quick-view{bottom:45%;opacity: 0.8;}
+.lookbook-slider .callout{left:20px!important}
+
+
+/* -- Testemonials -- */
+.testimonial_inner{position: relative;padding-top: 15px;margin-bottom: 30px;}
+.testimonial_text{font-style: italic;padding-left: 100px}
+.testimonial_image img{position: absolute;left:0;top:15px;width: 80px}
+.testimonial_text .test_content{line-height: 130%}
+.testimonial_text .test_name{display: inline-block;font-weight: bold}
+.testimonial_text .test_company{display: inline-block;margin-left: 5px;color:$gray}
+.testimonial_text .star-rating{margin-bottom: 10px;font-style: normal;}
+
+
+
+
+
+/* -- featured box -- */
+.featured-box {position:relative;@include single-transition(opacity);}
+.featured-box .featured-img{margin-bottom: 10px}
+.featured-box h4{text-transform: uppercase;}
+
+
+
+.featured-box.pos-left {padding-left: 70px;}
+.featured-box.pos-left .featured-img{position: absolute;left:0;top:3px;max-width: 50px;}
+
+.ux_bg .featured-box.pos-left{padding-left: 40px;}
+.ux_bg .featured-box.pos-left .featured-img{left:-20px;top:20px;background: #000;@include radius(99px);padding:5px;}
+
+.featured-box.pos-center{text-align: center}
+.featured-box.pos-center .tx-div{margin: 0 auto 10px}
+
+
+
+
+/* -- team members -- */
+.team-member-img{padding: 0 20px 15px;}
+.team-member .social-icons{margin-bottom: 15px}
+.team-member h4{margin: 0}
+.team-member h5{text-transform: uppercase; font-weight: normal; color: #999}
+
+/* -- message box -- */
+.message-box{background-repeat:repeat-x; padding: 10px;text-align: center;text-transform: uppercase;font-weight: bold; font-size: 110%}
+.message-box .inner{padding: 15px;}
+.message-box .inner .button{margin: 0 15px}
+
+/* -- add to cart shortcode --*/
+p.product.woocommerce{border:0px!important}
+p.product.woocommerce span.amount{display: block;font-size: 200%;font-weight: bold;margin-bottom: 5px;}
+p.product.woocommerce .added_to_cart{display: block;}
+
+
+/* -- product flip --*/
+
+.flipContainer{position:relative;-webkit-perspective:3000px;-moz-perspective:3000px;perspective:3000px;-webkit-user-select:none;-moz-user-select:none;user-select:none}
+.flipContent{position:absolute;top:0;left:0;height:100%;width:100%;display:none;overflow:hidden}
+.flipContent.flipCurrent{display:block}
+.sliding,.slidingBg{position:absolute;overflow:hidden;z-index:1;background-color:inherit}
+.flipping{background-color:inherit;-webkit-backface-visibility:hidden;-webkit-transform-style:flat;-webkit-transform:rotateY(0deg);-moz-backface-visibility:hidden;-moz-transform-style:preserve3d;-moz-transform:rotateY(0deg);backface-visibility:hidden;transform-style:preserve3d;transform:rotateY(0deg)}
+.flipping.firstHalf{-webkit-transform-origin:100% 0;-moz-transform-origin:100% 0;transform-origin:100% 0}
+.flipping.secondHalf{-webkit-transform-origin:0 0;-moz-transform-origin:0 0;transform-origin:0 0}
+.backflipping{display:none;background-color:inherit;-webkit-backface-visibility:hidden;-webkit-transform-style:flat;-webkit-transform:rotateY(180deg);-moz-backface-visibility:hidden;-moz-transform-style:flat;-moz-transform:rotateY(180deg);backface-visibility:hidden;transform-style:flat;transform:rotateY(180deg)}
+.holizontalFlipping.firstHalf{-webkit-transform-origin:100% 0;-moz-transform-origin:100% 0;transform-origin:100% 0}
+.holizontalFlipping.secondHalf{-webkit-transform-origin:0 0;-moz-transform-origin:0 0;transform-origin:0 0}
+.verticalFlipping.firstHalf{-webkit-transform-origin:0 100%;-moz-transform-origin:0 100%;transform-origin:0 100%}
+.verticalFlipping.secondHalf{-webkit-transform-origin:0 0;-moz-transform-origin:0 0;transform-origin:0 0}
+.splitHalf{position:absolute;overflow:hidden}.splitEmpty{background-color:#333}
+.flipContainer .pager{text-align:center;position:absolute;bottom:-10px;width:100%;cursor:pointer;overflow:hidden;}
+.flipContainer .pager span{display: inline-block;}
+.flip-slide{background: #FFF;}
+.flipContainer .callout{top:20px;left:20px;}
+.flipContainer .row-collapse {float:left!important;}
+.flipContainer .row-collapse > .columns{padding:0!important}
+.flipContainer .product-info{font-size: 80%; padding: 30px; overflow-y:auto}
+.flipContainer .star-rating{margin-bottom:15px;}
+.flipContainer .entry-title{padding:15px 50px 0 0;}
+.flipContainer .button{margin-top: 15px;}

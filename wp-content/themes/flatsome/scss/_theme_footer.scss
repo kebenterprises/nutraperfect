@@ -1,0 +1,16 @@
+.footer{padding: 30px 0 0;border-top:1px solid $border-light;}
+
+.footer.light{background: #fff; }
+.footer.dark{background: $gray;border:0;}
+
+.absolute-footer{padding: 15px 0 25px;}
+.absolute-footer.dark{background: #111;}
+.absolute-footer .left{font-size: 90%}
+.absolute-footer .right{font-size: 90%}
+
+.absolute-footer ul{margin: 0 0 10px;overflow: hidden;}
+.absolute-footer ul li{float:left;list-style: none; padding-right: 15px;border-bottom: 1px solid rgba(255,255,255,0.1);}
+.absolute-footer ul li:last-child{padding: 0}
+.absolute-footer ul li a{display: block;padding-bottom: 5px;text-transform: uppercase; font-size:80%;color: #999}
+.absolute-footer ul li a:hover{color: #000;}
+.copyright-footer{opacity: 0.6}

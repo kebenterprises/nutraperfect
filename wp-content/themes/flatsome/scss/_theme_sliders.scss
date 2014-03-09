@@ -1,0 +1,100 @@
+/* -- slider container -- */
+.iosSlider {position: relative; top: 0; left: 0; @include single-transition(min-height,500ms,ease-out); margin-bottom: 30px}
+
+.iosSlider .slider { width: 100%; height: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.iosSlider .slider .slide{ float: left; width: 100%; }
+.iosSlider.default{position:relative;height:300px;min-height:300px;overflow: hidden;width: 100%;position: relative;top:-1px!important;}
+.iosSlider.blog-posts{height:200px;min-height:300px;overflow: hidden;width: 100%}
+.iosSlider.lookbook-slider{height:300px;min-height:300px;overflow: hidden;width: 100%}
+.iosSlider.product-gallery-slider{height:500px;min-height:500px;overflow: hidden;width: 100%;}
+.iosSlider .slider > .ux_banner, .iosSlider .slider > .row { float: left; width: 100%; height: 100%;}
+.iosSlider .slider > a{display: block;}
+.iosSlider .slider > a img{width: 100%!important}
+.cat-header .iosSlider{margin-bottom: 0}
+.iosSlider .product-image .front-image img,.iosSlider .product-image .back-image img{width: 100%!important;}
+
+
+/* -- product gallery / thumbnail slider -- */
+.product-gallery-slider{overflow: hidden;margin-bottom: 15px}
+.product-gallery-slider .slide img{width: 100%!important}
+.product-gallery-slider .sliderNav.small a{background: none!important;box-shadow: none;width: 15%!important;}
+.product-gallery-slider .sliderNav.small  a.nextSlide span{left:15px; border: 0;line-height: 28px}
+.product-gallery-slider .sliderNav.small  a.prevSlide span{right: 15px; border: 0;line-height: 28px}
+
+.product-thumbnails .sliderNav.small a{bottom:10px;background: none!important;box-shadow: none;}
+.product-thumbnails .sliderNav.small a.disabled.nextSlide {left:-50px;}
+.product-thumbnails .sliderNav.small a.disabled.prevSlide {right:-50px;}
+.product-thumbnails .sliderNav.small a span{top:40%;border:0;line-height: 28px}
+
+
+
+/* -- product gallery slider -thumbnails  -- */
+.product-thumbnails{width: 100%;overflow: hidden;margin-bottom: 0;white-space: nowrap}
+.product-thumbnails .thumb{width: 116px!important;overflow:hidden;border: 1px solid $border-light;@include single-transition(opacity);margin:0 15px 0 0;display: inline-block; opacity: 0.5;}
+.product-thumbnails .thumb img{display: block;width: 100%;@include single-transition();}
+.product-thumbnails .thumb:hover img,.product-thumbnails .thumb.selected img{margin-top: -10px;}
+.product-thumbnails .thumb:hover,.product-thumbnails .thumb.selected{opacity: 1;border-color: #ccc}
+
+
+/* -- slider navigation -- */
+.iosSlider .sliderNav a{z-index: 2; width: 7%; position: absolute;top:0;bottom:0;opacity:0;@include single-transition();}
+.iosSlider .sliderNav a span{display: block; line-height:30px;position:absolute;top:45%;font-size: 32px;width:38px;height:38px;text-align:center;color: #fff;border:3px solid #FFF; @include radius(99px); @include single-transition();}
+.iosSlider .sliderNav a:hover span{background: $primary-color; color: #FFF; border-color:$primary-color}
+
+.iosSlider:hover .sliderNav a{opacity:0.7}
+.iosSlider .sliderNav a:hover{opacity: 1;};
+
+.iosSlider .sliderNav a.nextSlide{left:0;}
+.iosSlider .sliderNav a.prevSlide{right: 0;}
+
+.iosSlider .sliderNav a.nextSlide span{left:30%; padding-right: 3px;}
+.iosSlider .sliderNav a.prevSlide span{right:30%; padding-left: 3px;}
+
+/* -- small slider arrows (used on product sliders and blog slider -- */
+.sliderNav.small a{width: 15px;}
+.iosSlider:hover .sliderNav.small a{width: 40px;}
+
+.sliderNav.small a {opacity:1;background: rgba(255,255,255,0.8)!important;-webkit-box-shadow: -0px -150px 30px 0px rgba(0, 0, 0, 0.3);box-shadow: -0px -150px 30px 0px rgba(0, 0, 0, 0.3);}
+.sliderNav.small a.disabled{opacity: 0!important;}
+
+.product-image .sliderNav a{top:100px;bottom:100px;}
+
+.iosSlider:hover .sliderNav.small a span{opacity: 1}
+.sliderNav.small a span{opacity:0; border-color:#000; color:#000; height:30px;width: 30px;border-width: 2px;line-height: 24px}
+.sliderNav.small a.nextSlide span{left:0px;padding-right: 3px}
+.sliderNav.small a.prevSlide span{right:0px;padding-left: 3px}
+
+.iosSlider .sliderNav.simple a{border:0;}
+.iosSlider .sliderNav.simple a span{line-height: 26px}
+.iosSlider .sliderNav.dark a{color: #777}
+
+.iosSlider .sliderNav.simple a.nextSlide{left:10px;}
+.iosSlider .sliderNav.simple a.prevSlide{right:10px;}
+
+/* -- column slider styles -- */
+.column-slider{position: relative;margin-bottom: 15px!important;}
+.column-slider .product-small,.column-slider  .product-category{padding: 0!important;}
+.column-slider .product-small > a, .column-slider .product-category a{display: block;padding: 0 15px}
+.column-slider .product-category .header-title{left:15px;right: 15px;}
+.column-slider .slider{margin: 0!important;}
+
+.column-slider .blog_shortcode_item{padding: 0!important;}
+.column-slider .blog_shortcode_item a{display: block;padding: 0 15px}
+.column-slider .sliderNav a span{top:30%}
+
+.category-slider .sliderNav a span{top:45%}
+.blog-posts .sliderControlls{opacity: 0;@include single-transition(opacity);}
+.blog-posts:hover .sliderControlls{opacity: 1;}
+
+
+/* -- slider bullets -- */
+.sliderBullets{position: absolute; bottom: 30px;left:10%; right:10%;text-align: center;@include single-transition(opacity);z-index: 1}
+.sliderBullets .bullet,.flipContainer .pager span.dot{display: inline-block; height:13px; width: 13px; margin: 0 2px;border:3px solid #FFF; opacity: 0.5;@include radius(99px);@include single-transition(background);}
+.sliderBullets .bullet.active,.sliderBullets .bullet:hover,.flipContainer .pager span.dot.current{opacity: 1;background: #FFF; cursor: pointer;}
+
+/* div fixes */
+.shortcode_tabgroup .column-slider .sliderNav{top:-50px}
+
+
+
+

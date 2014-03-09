@@ -1,0 +1,51 @@
+/* -- Hide stuff for cleaner checkout (footers and banners) -- */
+.woocommerce-checkout .footer-1,.woocommerce-checkout .footer-2{display: none!important}
+
+/* -- checkout breadcrumb --*/
+.checkout-breadcrumb h1{text-align:center;margin-bottom: 30px; text-transform:uppercase;padding-bottom:30px;font-weight: normal;color: #ccc;font-size: 140%;}
+.checkout-breadcrumb span.divider{display: inline-block;margin: 0 10px;opacity: 0.6}
+.woocommerce-cart .title-cart,.woocommerce-checkout .title-checkout,{font-weight: bolder; color: #333;}
+
+/* -- general checkout layout -- */
+.woocommerce .order-review,.woocommerce-checkout form.login{border:3px solid $primary-color;padding: 30px;}
+.woocommerce .checkout-group label{font-weight: bold}
+.checkout-group h3{color:$primary-color; font-size:130%;text-transform: uppercase;padding:8px 0 10px;margin-bottom: 15px; border-top:3px solid $border;  width: 98.5%;border-bottom: 1px solid $border-light; }
+.checkout-group h3:before, .order-review h3:before{content: "\f107"; font-family: 'icomoon';margin-right: 10px};
+.woocommerce-checkout .entry-title{width: 50%;display: inline-block;}
+
+/* -- checkout fields --  */
+.woo-billing p{display: inline-block;margin-bottom: 25px; width: 98.5% }
+.woo-billing p input{margin-bottom: 0px;}
+#billing_address_1_field{margin-bottom: 10px}
+#billing_first_name_field,#billing_last_name_field,#billing_email_field,#billing_phone_field{width: 49%;}
+#billing_first_name_field,#billing_email_field{padding-right: 2%}
+label.checkbox{display: inline-block;margin-left: 10px;font-weight: normal;}
+p.create-account-row{display: inline-block;width: 98.5%; padding: 15px 0 10px;border-bottom: 1px solid $border}
+.input-checkbox{display: inline-block;}
+#order_comments{width: 98.5%}
+
+/* -- ship to other -- */
+h3#ship-to-different-address{font-size: 100%;border-width:1px;}
+h3#ship-to-different-address:before{display: none;}
+h3#ship-to-different-address label.checkbox{margin-left: 0}
+h3#ship-to-different-address input{margin-bottom: 0;margin-left: 10px;}
+h3#ship-to-different-address:hover{color:#000}
+
+/* -- checkout order review -- */
+.order-review h3{padding: 0 0 10px; color:$primary-color; text-transform: uppercase;}
+ul.payment_methods{margin: 0 0 30px 0!important;}
+ul.payment_methods .input-radio{margin-bottom: 15px;}
+
+ul.payment_methods li{list-style: none;border-bottom: 1px solid $border;padding-top: 5px}
+ul.payment_methods li label{display: inline-block;margin-left: 10px;}
+ul.payment_methods p{font-size: 90%;line-height: 110%;opacity: 0.8}
+
+.form-row.terms {position:relative;}
+.form-row.terms .checkbox{padding-left: 25px;margin:0;}
+.form-row.terms .input-checkbox{position: absolute;left:0px;top:4px;}
+
+
+/* -- checkout country dropdown fixes -- */
+a.chzn-single{background: #FFF!important;-webkit-border-radius: 0px!important;}
+.woocommerce-checkout .form-row .chzn-container-single .chzn-single {height: 32px!important;
+line-height: 33px!important;}
